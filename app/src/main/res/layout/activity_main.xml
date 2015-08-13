@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <include
+        android:id="@+id/calls_left_layout"
+        layout="@layout/calls_left_layout" />
+
+
+    <LinearLayout
+        style="@style/Margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calls_left_layout">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/desired_call_duration"
+            android:textSize="@dimen/text_size_body1" />
+
+        <EditText
+            android:id="@+id/callDuration_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:textColorHint="@color/colorHint" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/save_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/calls_left_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/calls_left_layout"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:onClick="onSaveButtonClicked"
+        android:text="Save"
+        android:textColor="@color/colorButton" />
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PhoneController</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="save">Save</string>
+    <string name="call_used_first_text">You have used </string>
+    <string name="call_used_second_text"> calls.</string>
+    <string name="desired_call_duration">duration:</string>
+    <string name="calls_available">Calls Available</string>
+</resources>
